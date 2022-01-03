@@ -3,10 +3,10 @@ import { usestate } from "react";
 // import("./List.css");
 import  styled from "styled-components";
 
-function List({data, setShow}) {
+function List({data ,setShow}) {
   
-    const Showdata = (data) =>{
-        setShow(data)
+    const Showdata = (recipe) =>{
+        setShow(recipe)
     }
     
     return (
@@ -14,7 +14,7 @@ function List({data, setShow}) {
             <h2>List Of Recipe</h2>
             <RightSide>
             {data.map((recipe) =>(
-                <div key = {recipe.id} onClick = {Showdata(data)}>
+                <div key = {recipe.id} onClick = {Showdata(recipe)}>
                 <p>Recipe Name :{recipe.name}</p>
                 <p> Time :{recipe.time}</p>
                 </div>
@@ -28,6 +28,7 @@ function List({data, setShow}) {
 
 const RightSide = styled.div`
  widht:700px;
+ height : 200px;
  overflow-y: scoll;
  display: flex;
  flex-direction: column;`

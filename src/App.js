@@ -8,7 +8,8 @@ import { useState } from 'react';
 function App() {
   const [recipedata , setRecipedata] = useState([]);
   const [data , setData] = useState([]);
-  return (
+  const [show, setShow] = useState([]);
+   return (
     <div className="App">
        <AddRecipe 
        data = {data}
@@ -16,7 +17,7 @@ function App() {
        recipedata = {recipedata}
        setRecipedata = {setRecipedata}
 /> 
-  <List data = {data} />
+  <List data = {data} setShow = {setShow} />
     </div>
   );
 }
