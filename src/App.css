@@ -1,4 +1,10 @@
-
+ .App{
+   margin-left: 2%;
+   display: inline-block;
+ }
+ .list{
+   display: flex;
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;

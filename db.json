@@ -17,12 +17,36 @@
       "id": 2
     },
     {
-      "name": "samosa",
+      "name": "fried momos",
       "ingredients": " 3-4 medium potatoes 500-550 grams ",
       "time": "10:10",
       "img": "https://foodish-api.herokuapp.com/images/pizza/ ",
       "Instruction": "crispy",
       "id": 3
+    },
+    {
+      "name": "chicken",
+      "ingredients": "chicken",
+      "time": "10:45",
+      "img": "https://foodish-api.herokuapp.com/images/pizza/",
+      "Instruction": "ert",
+      "id": 4
+    },
+    {
+      "name": "jalebi",
+      "ingredients": "sugar",
+      "time": "18:51",
+      "img": "https://foodish-api.herokuapp.com/images/pizza/",
+      "Instruction": "sweet",
+      "id": 5
+    },
+    {
+      "name": "burger",
+      "ingredients": "bread",
+      "time": "05:00",
+      "img": "https://foodish-api.herokuapp.com/images/pizza/",
+      "Instruction": "dsfsd",
+      "id": 6
     }
   ]
 }

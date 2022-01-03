@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import  styled from "styled-components";
  
 function AddRecipe({recipdata, setRecipedata, data , setData}) {
-  const [form , setForm] = useState("");
+  const [form , setForm] = useState(null);
 //   const [list , setList] = useState([]);
 
   const handleChange = (e) =>{
@@ -47,8 +47,7 @@ function AddRecipe({recipdata, setRecipedata, data , setData}) {
     return (
         <div>
             <h1>Add your Recipe</h1>
-            <Form>
-            <form onSubmit={addData}> 
+            <Form onSubmit={addData}> 
             <input type="text" onChange = {handleChange} name = "name" placeholder = "Name of Recipe" />
             <br />
             <input type="text" onChange = {handleChange} name = "ingredients" placeholder = "Ingredients" />
@@ -60,7 +59,6 @@ function AddRecipe({recipdata, setRecipedata, data , setData}) {
              <input type="text" onChange = {handleChange} name = "Instruction" placeholder = "Instruction" />
              <br />
              <input type = "submit" value = "submit" />
-            </form>
             </Form>
             
         </div>
@@ -71,8 +69,9 @@ const Form = styled.form`
 justify-content : space-between;
 align-items : center;
 width: 400px;
-&:input{
-    margin : 5px
+margin: 10px;
+input{
+    margin : 5px;
 }`
 
 
