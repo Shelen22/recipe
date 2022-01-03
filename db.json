@@ -7,6 +7,22 @@
       "img": "https://foodish-api.herokuapp.com/images/pizza/ ",
       "Instruction": "hfhdfbf",
       "id": 1
+    },
+    {
+      "name": "samosa",
+      "ingredients": " 3-4 medium potatoes 500-550 grams ",
+      "time": "10:10",
+      "img": "https://foodish-api.herokuapp.com/images/pizza/ ",
+      "Instruction": "crispy",
+      "id": 2
+    },
+    {
+      "name": "samosa",
+      "ingredients": " 3-4 medium potatoes 500-550 grams ",
+      "time": "10:10",
+      "img": "https://foodish-api.herokuapp.com/images/pizza/ ",
+      "Instruction": "crispy",
+      "id": 2
     }
     
   ]

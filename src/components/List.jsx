@@ -3,15 +3,18 @@ import { usestate } from "react";
 // import("./List.css");
 import  styled from "styled-components";
 
-function List({data}) {
-
+function List({data, setShow}) {
+  
+    const Showdata = (data) =>{
+        setShow(data)
+    }
     
     return (
         <div>
             <h2>List Of Recipe</h2>
             <RightSide>
             {data.map((recipe) =>(
-                <div key = {recipe.id}>
+                <div key = {recipe.id} onClick = {Showdata(data)}>
                 <p>Recipe Name :{recipe.name}</p>
                 <p> Time :{recipe.time}</p>
                 </div>
